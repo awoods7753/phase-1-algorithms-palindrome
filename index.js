@@ -1,13 +1,24 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let wordSplit = word.split('')
+  let wordArray = wordSplit.reverse()
+  let wordReverse = wordArray.join('')
+    if (word===wordReverse) {
+     return true; 
+   } else {
+     return false;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  function - isPalindrome(word)
+ I need to seperate and reverse the word, then join it back together
+ Add an if statement that checks the new word against the string with
+ a return statement of true or false
 */
 
 /*
-  Add written explanation of your solution here
+  My function takes a word argument and splits the word into an array of letters, reverses those letters
+  and then joins them back together. It then checks to see if the string that was implemented matches the joined and reversed string.
 */
 
 // You can run `node index.js` to view these console logs
